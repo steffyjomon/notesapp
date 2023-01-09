@@ -1,0 +1,40 @@
+<html>
+<title>Notes App</title>
+<head>
+
+<link rel="stylesheet" href="./uifwk/css/common.css" />
+
+<script src='./uifwk/js/jsonoutputbind.js'></script>
+<script src='./uifwk/js/jsoninputbind.js'></script>
+<script src='./uifwk/js/htmlhelper.js'></script>
+
+<link rel="stylesheet" href="./notes.css" />
+<script src='./notes.js'></script>
+
+</head>
+
+<body onload='com.notes.App.getNoteList();'>
+	<div x-element-id='toastarea'></div>
+	<div style='width:100%;display:flex'>
+	<div x-element-id='noteitemsarea'  style='width:25%;border:1px solid;border-radius:5px'>
+	<label>List of available notes</label>
+	</div>
+	<div id='notearea' style='width:25%'>
+	<input id='title' x-source-path='res:title' x-target-path='req:title' style='width:100%' placeholder='Title...'/>
+	<input id='id' x-source-path='res:id' type='hidden' x-target-path='req:id' style='width:100%'/>
+	<textarea id='content' x-source-path='res:content' x-target-path='req:content' style='width:100%'
+	 placeholder='Content...' rows='20'></textarea>
+	<div>
+		<button id='savebtn' style='width:25%' onclick='com.notes.App.saveNote();'>Save</button>
+		<button id='deletebtn' style='width:25%' onclick='com.notes.App.deleteNote();'>Delete</button>
+		<button id='deletebtn' style='width:25%' onclick='com.notes.App.clearNote();'>New</button>
+	</div>
+	</div>
+	</div>
+	<template x-element-id='noteitemtemplate'>
+		<div x-element-id='noteitem'>
+			<input x-source-path='res:id' x-target-path='req:id' type='hidden' /> 
+			<label x-source-path='res:title' class='noteitemlabel'></label>
+		</div>
+	</template>
+</html>

@@ -1,0 +1,93 @@
+body {
+	font-size: 12;
+}
+
+table {
+	border: solid 1px;
+	border-collapse: collapse;
+	margin : 2px;
+	padding : 2px;
+}
+
+th {
+	border: solid 1px;
+}
+
+tr {
+	border: solid 1px;
+}
+
+
+td {
+	border: solid 1px;
+}
+
+button {
+	font-size: 12;
+	font-weight: 1000;
+	color: white;
+	background-color: #6002ee;
+	border-radius: 5px;
+	border-color: #6002ee;
+}
+
+label {
+	background-color: #ebebeb;
+	border-radius: 2px;
+	margin : 2px;
+	padding : 2px;
+}
+
+div {
+	margin : 2px;
+	padding : 2px;
+}
+
+.errortoast {
+	background-color: #ff8080;
+	border-radius: 5px;
+	width:75%;
+}
+
+.successtoast {
+	background-color: #80ff80;
+	border-radius: 5px;
+	width:75%;
+}
+
+.popupdiv {
+	position: absolute;
+	z-index: 1; 
+	width: 100%; 
+	height: 100%;
+	display: flex
+}
+
+.popupoverlay {
+	position: absolute; 
+	z-index: 2; 
+	background-color: grey; 
+	width: 100%; 
+	height: 100%; 
+	opacity: 0.2;
+}
+
+.poupupcontent {
+	border-radius:5px; 
+	position:relative; 
+	background-color: white; 
+	width: 50%; 
+	height: 50%; 
+	z-index: 3; 
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+input {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom-color: blue;
+}

@@ -1,0 +1,12 @@
+.noteitemlabel {
+	background-color: #a3d9fe;
+	border-radius: 2px;
+	margin : 2px;
+	padding : 2px;
+	display: block;
+    width: 98%;
+    height:30px;
+    font-size: 20;
+    text-align: center;
+    
+}
